@@ -171,6 +171,7 @@
     grid-template-rows: auto 1fr auto;
     justify-content: space-between;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-left: 6px solid #f4b400; 
 
 }
 .project-card h3 {
@@ -191,4 +192,49 @@
   height: 20px;
   opacity: 0.7;
   cursor: pointer;
+}
+.card-icon:hover {
+  opacity: 1;
+}
+.side-panels{
+    display:grid;
+    gap:1.5rem;
+}
+.announcements-contents,.trending-contents {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: grid;
+  gap: 1rem;
+}
+.announcement-item:not(:last-child) {
+  border-bottom: 1px solid #a7a2a2;
+}
+.trending-icon{
+    width: 34px;
+    height: 34px;
+}
+.trending-item{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+
+}
+.trending-user{
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  justify-content: end;
+}
+.trending-text h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.trending-text p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #777;
 }
