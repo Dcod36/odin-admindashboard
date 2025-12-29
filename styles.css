@@ -53,8 +53,8 @@
 
 }
 .avatar{
-  width: 24px;
-  height: 24px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,10 +81,73 @@
 .avatar-name{
     display:flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1.5rem;
     font-size: 18px;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
 }
 .search-bar{
     display:flex;
     gap:0.75rem;
+    grid-column: 1;
+    grid-row: 1;
+    background: #e9eef3;
+    border-radius: 999px;
+    padding: 0.5rem 1rem;
+}
+.search-bar input{
+    border:none;
+    background:transparent;
+    outline:none;
+    width:100%;
+    max-width:600px;
+}
+
+.header{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows:auto 1fr;
+    row-gap: 1.75rem;
+    gap:1rem 2rem;
+    padding:1.5rem 2rem;
+    background:white;
+
+}
+.user-profile{
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.user-profile p{
+ font-size: 0.9rem;
+  margin: 0;
+}
+.user-profile h2 {
+  margin: 0;
+}
+
+.header-contents{
+    grid-column:2;
+    grid-row:2;
+}
+.user-text {
+  display: flex;
+  flex-direction: column;
+}
+.header-contents {
+  display: flex;
+  gap: 1.5rem;
+  justify-self: end;
+}
+
+.header-contents button {
+  padding: 0.1rem 1.5rem;
+  border-radius: 999px;
+  border: none;
+  background: #1e90ff;
+  color: white;
+  font-weight: 600;
 }
